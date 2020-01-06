@@ -1,0 +1,98 @@
+textarea:focus, input:focus, select:focus, button:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-image: url("../images/bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.container-fluid{
+	width: 100%;
+	margin: 0px;
+	padding:0px;
+}
+.apresentacao{
+	color: #191919;
+	background-color: #ffcd38;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+.pesquisa_input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	width: 100%;
+	height: 60px;
+	padding:0 20 0 20;
+}
+.pesquisa_input input{
+	width: 70%;
+	height: 40px;
+	padding-left: 20px;
+	border-style: none;
+	border:1px solid #191919;
+	border-radius: 15px;
+}
+::-webkit-input-placeholder {
+   padding: 10px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   padding: 10px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   padding: 10px;
+}
+
+:-ms-input-placeholder {  
+   padding: 10px;
+}
+.caixas_resultados{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+	width: 100%;
+}
+.caixa{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	width: 300px;
+	height: 400px;
+	padding:20px;
+}
+.doença{
+	background-color: #ff9800;
+}
+h4{
+	width: 100%;
+	text-align: center;
+}
+.sintomas{
+	padding: 10px;
+}
+.tratamento{
+	background-color: #7bff4e;
+}
+.medicamento{
+	background-color: #ffeb3b;
+}
+@media only screen and (max-width: 425px){
+	.caixas_resultados{
+	display: flex;
+	margin: auto;
+	margin-top: 15px;
+	width: 100%;
+}
+}
